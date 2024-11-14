@@ -1,0 +1,457 @@
+body {
+    @include body;
+}
+
+main {
+    .spotify {
+        @include grid;
+    }
+
+    .inicio {
+        @include bloqueFondo;
+        @extend %mb-10;
+    }
+
+    .biblioteca {
+        @include bloqueFondo;
+    }
+
+    .inicio nav a, .biblioteca nav a {
+        @include link;
+    }
+
+    .inicio__inicio, .inicio__buscar, .contenido__tres__discografia {
+        @include flexbox;
+    }
+
+    .inicio__inicio {
+        @extend %mb-10;
+
+        nav a {
+            @include phones {
+                display: none;
+            }
+        }
+    }
+
+    .inicio__buscar {
+        nav a {
+            @include phones {
+                display: none;
+            }
+        }
+    }
+
+    .biblioteca__uno, .biblioteca__tres {
+        @include flexjustify;
+        @extend %mb-10;
+    }
+
+    .contenido__tres__cancion {
+        @include flexjustify;
+
+        .contenido__tres__oyentes p, .contenido__tres__duracion p {
+            @include phones {
+                display: none;
+            }
+        }
+    }
+
+    .contenido__tres .contenido__tres__cancion {
+        @extend %mb-10;
+    }
+
+    .biblioteca__tres .biblioteca__tres__orden {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+
+    .biblioteca__dos, .biblioteca__cuatro__artistas {
+        @include flexbox;
+        @extend %mb-10;
+    }
+
+    .biblioteca__cerrar img {
+        @include rellenoicons;
+        @extend %coloriconartist;
+    }
+
+    .biblioteca__artistas button {
+        padding: 6px 18px;
+        border-radius: 19px;
+
+        @include phones {
+            display: none;
+        }
+    }
+
+    .biblioteca__titulo, .biblioteca__icons, .biblioteca__cuatro .resaltar {
+        @include flexbox;
+    }
+
+    .biblioteca__titulo, .biblioteca__tres__orden nav a {
+        @include laptops {
+            display: none;
+        }
+    }
+
+    .biblioteca__cuatro .resaltar nav a{
+        color: $colorspotify;
+    }
+
+    .biblioteca__cuatro__artistas img {
+        width: 20%;
+        border-radius: 50%;
+
+        @include phones {
+            display: none;
+        }
+    }
+
+    .biblioteca__cuatro .activo {
+        color: $colorspotify;
+    }
+
+    .biblioteca__cuatro .activo .volumen {
+        width: 20px;
+        filter: opacity(0.3) drop-shadow(0 0 0 #00eb00);
+    }
+
+    .biblioteca__cuatro .activo .volumen img {
+        width: 25px;
+    }
+
+    .banner {
+        @include banner;
+
+        img {
+            width: 100%;
+        }
+
+        .banner__uno {
+            @include flexbox;
+        }
+
+        .banner__retroceder {
+            @include rellenoicons;
+            @extend %coloriconflechas;
+            @extend %pfi;   
+        }
+        
+        .banner__avanzar {
+            @include rellenoicons;
+            @extend %coloriconflechas;
+            @extend %pfd;  
+        }
+
+        .banner__uno__flechas {
+            @include flexbox;
+        }
+
+        .banner__instalar__app {
+            @include flexbox;
+        }
+
+        .banner__instalar__app nav a{
+            @include link;
+        }
+
+        .banner__instalar__app {
+            @include app;
+        }
+
+        .banner__uno {
+            @include flexjustify;
+            @extend %mb-10;
+            @extend %pb-100;
+
+            .banner__varios {
+                @include flexbox;
+            }
+    
+            .banner__notificaciones {
+                @include rellenoicons;
+                @extend %wh-30;
+            }
+    
+            .banner__user img {
+                @include rellenoicons;
+                @extend %wh-30;
+                &:hover {
+                    transform: scale(1.09);
+                }
+            }
+    
+            .banner__user, .banner__verificado {
+                @extend %wh-30;
+            }
+        }
+
+        .banner__dos {
+            @include flexbox;
+
+            .banner__verificado {
+                @include verificado;
+            }
+        }
+
+        .banner__tres {
+            @include titulo;
+        }
+    }
+
+    .contenido {
+        @include contenido;
+
+        img {
+            @extend %w-100;
+        }
+
+        .contenido__uno {
+            @include flexboxcontenido;
+            @extend %mb-10;
+        }
+
+        .contenido__uno__stop {
+            @include contenidostop;
+        }
+
+        p {
+            color: $mainColor;
+        }
+
+        button {
+            @include contenidoboton;
+        }
+
+        h2 {
+            @include subtitulo;
+        }
+
+        img {
+            @extend %w-100;
+        }
+
+        .contenido__tres {
+            @extend %pp;
+        }
+
+        .contenido__tres__vermas {
+            @include vermas;
+        }
+
+        .contenido__tres__megusta {
+            @extend %wh-18;
+            @extend %reproduciendo;
+        }
+
+        .contenido__cuatro__seleccion__artista {
+            @include seleccionartista;
+
+            h2 {
+                @include phones {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .contenido__tres__general {
+            display: contents;
+        }
+
+        .contenido__tres__discografia {
+            @include flexbox;
+            width: 250px;
+
+            .contenido__tres__logo__reproduciendo {
+                @extend %reproduciendo;
+                @extend %wh-30;
+            }
+    
+            .contenido__tres__logo, .contenido__tres__disco {
+                @extend %wh-30;
+            }
+
+            .contenido__tres__cancion__reproduciendo p {
+                @extend %colorspotify;
+            }
+
+            .contenido__tres__cancion__cancion p {
+                @extend %colorletra;
+            }
+
+            .contenido__tres__cancion span{
+                @include flexboxcenter;
+                @extend %wh-30;
+                @extend %colorletra;
+            }
+
+            .contenido__tres__cancion_lista {
+                @extend %mb-0;
+            }
+
+            .contenido__tres__cancion__siguiente p {
+                @extend %colorletra;
+            }
+
+            .contenido__tres__cancion__cancion p{
+                @extend %colorletra;
+            }
+
+            .contenido__tres__cancion p {
+                color: white;
+            }
+        }
+    }
+
+    .columna3 {
+        img {
+        @extend %w-100;
+        }
+        
+        .columna3__general {
+            @include bloqueFondo;
+
+            .columna3__artista__inicio {
+                @include flexjustify;
+                @extend %mb-10;
+            }
+
+            .columna3__artista__inicio__inicio nav a {
+                @include link;
+            }
+    
+            .columna3__artista__inicio__cerrar {
+                @extend %wh-20;
+            }
+
+            .columna3__artista__portada {
+                @extend %mb-10;
+
+                .columna3__artista__portada__img img {
+                    @include phones {
+                        width: 80px;
+                    }
+                }
+            }
+
+            .columna3__artista__cancion__nombre h2 {
+                @extend %h2;
+                @extend %mb-2;
+            }
+
+            .columna3__artista__cancion__nombre p {
+                @extend %p;
+            }
+
+            .columna3__artista__cancion {
+                @include flexjustify;
+                @extend %mb-10;
+            }
+
+            .columna3__artista__cancion__mm {
+                @include flexbox;
+                @include phones {
+                    display: none;
+                }
+            }
+
+            .columna3__artista__cancion__megusta, .columna3__artista__cancion__mas {
+                @extend %wh-18;
+            }
+
+            .columna3__artista__infoartista__banner p {
+                @include bannerinfoartista;
+                @extend %p;
+                padding-bottom: 100px;
+            }
+
+            .columna3__artista__infoartista {
+                @extend %mb-10;
+                @include phones {
+                    display: none;
+                }
+            }
+
+            .columna3__artista__nombreartista {
+                @extend %mb-10;
+            }
+
+            .columna3__artista__nombreartista p {
+                @extend %pfw;
+            }
+
+            .columna3__artista__oyentes p {
+                @extend %p;
+            }
+
+            .columna3__artista__oyentes {
+                @include flexjustify;
+                @extend %mb-10;
+            }
+
+            .columna3__siguiendo button {
+                @include contenidoboton;
+                @include phones {
+                    display: none;
+                }
+            }
+
+            .columna3__artista__descripcion p {
+                @extend %p;
+            }
+        }
+    }
+}
+
+footer {
+    
+    img {
+        @extend %w-100;
+    }
+
+    .footer__spotify {
+        @include grid;
+    }
+
+    .footer__spotify__c1__artista__portada {
+        @extend %wh-50;
+    }
+
+    .footer__spotify__c1__artista {
+        @include flexboxfooter;
+    }
+
+    .footer__spotify__c1__artista__nombreartista, .footer__spotify__c2__general__r2__ri, .footer__spotify__c2__general__r2__rf {
+        @extend %colorletra;
+    }
+
+    .footer__spotify__c1__artista__icon {
+        @extend %wh-18;
+    }
+
+    .footer__spotify__c2__general__r1, .footer__spotify__c2__general__r2, .footer__spotify__c3__general {
+        @include flexbox;
+    }
+
+    .footer__spotify__c2__general__r1__icons, .footer__spotify__c3__icons {
+        @extend %wh-20;
+    }
+
+    .footer__spotify__c2__general {
+        @include footerc2;
+    }
+
+    .footer__spotify__c3__icons {
+        @include footerc3;
+    }
+
+    .footer__spotify__c3__general img {
+        @extend %w-20;
+    }
+
+    .footer__spotify__c3 {
+        margin: 0 auto;
+    }
+}

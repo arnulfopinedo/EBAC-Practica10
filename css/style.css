@@ -1,0 +1,162 @@
+body {
+    background-color: #181818 ;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+main .spotify {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    width: 80%;
+    margin: 10px auto;
+    gap: 5px;
+  }
+
+  .inicio {
+    background-color: #1c1c1c;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+
+  .biblioteca {
+    background-color: #1c1c1c;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+.inicio__inicio {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 14px;
+}
+
+.biblioteca__uno, .biblioteca__titulo, .biblioteca__icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.biblioteca__dos {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.biblioteca__dos button {
+  padding: 6px 14px;
+  border-radius: 18px;
+}
+
+.biblioteca__tres {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.biblioteca__tres__orden {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.biblioteca__cuatro img {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.biblioteca__cuatro__artistas {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.biblioteca__cuatro .resatalar nav a {
+    color: #00e300;
+}
+
+.inicio__buscar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.biblioteca__cuatro .activo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.biblioteca__cuatro .biblioteca__cuatro__artistas .resaltar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.biblioteca__cuatro .biblioteca__cuatro__artistas .resaltar nav a {
+  color: #00eb00;
+}
+
+.volumen img {
+  width: 20px;
+  filter: opacity(0.3) drop-shadow(0 0 0 #00eb00);
+}
+
+.inicio nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.biblioteca nav a {
+  text-decoration: none;
+  color: white;
+}
+
+
+.banner {
+  width: 100%;
+  background-image: url(../img/audioslave3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgb(255, 255, 255);
+  background-position-y: 0%;
+  padding: 20px;
+  box-sizing: border-box;
+  font-weight: 700;
+}
+
+.banner__uno__avanzar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.banner__uno {
+  display: flex;
+  justify-content: space-between;
+}
+
+.banner__uno__app {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.banner__uno__app nav a {
+  text-decoration: none;
+  color: white;
+}
+
+.banner .banner__uno__app .user {
+  width: 34px;
+  border-radius: 50%;
+}

@@ -1,0 +1,475 @@
+main .columna3 .columna3__general .columna3__artista__oyentes, main .columna3 .columna3__general .columna3__artista__nombreartista, main .columna3 .columna3__general .columna3__artista__infoartista, main .columna3 .columna3__general .columna3__artista__cancion, main .columna3 .columna3__general .columna3__artista__portada, main .columna3 .columna3__general .columna3__artista__inicio, main .contenido .contenido__uno, main .banner .banner__uno, main .biblioteca__dos, main .biblioteca__cuatro__artistas, main .contenido__tres .contenido__tres__cancion, main .biblioteca__uno, main .biblioteca__tres, main .inicio__inicio, main .inicio {
+  margin-bottom: 10px;
+}
+
+main .contenido .contenido__tres__discografia .contenido__tres__cancion_lista {
+  margin-bottom: 0px;
+}
+
+main .columna3 .columna3__general .columna3__artista__cancion__nombre h2 {
+  margin-bottom: 2px;
+}
+
+main .contenido .contenido__tres__discografia .contenido__tres__logo__reproduciendo, main .contenido .contenido__tres__megusta {
+  filter: opacity(0.3) drop-shadow(0 0 0 #00eb00);
+}
+
+footer .footer__spotify__c1__artista__nombreartista, footer .footer__spotify__c2__general__r2__ri, footer .footer__spotify__c2__general__r2__rf, main .contenido .contenido__tres__discografia .contenido__tres__cancion__siguiente p, main .contenido .contenido__tres__discografia .contenido__tres__cancion span, main .contenido .contenido__tres__discografia .contenido__tres__cancion__cancion p {
+  color: rgb(255, 255, 255);
+}
+
+main .contenido .contenido__tres__discografia .contenido__tres__cancion span, main .contenido .contenido__tres__discografia .contenido__tres__logo, main .contenido .contenido__tres__discografia .contenido__tres__disco, main .contenido .contenido__tres__discografia .contenido__tres__logo__reproduciendo, main .banner .banner__uno .banner__user, main .banner .banner__uno .banner__verificado, main .banner .banner__uno .banner__user img, main .banner .banner__uno .banner__notificaciones {
+  width: 30px;
+  height: 30px;
+}
+
+footer .footer__spotify__c1__artista__portada {
+  width: 50px;
+  height: 50px;
+}
+
+footer .footer__spotify__c1__artista__icon, main .columna3 .columna3__general .columna3__artista__cancion__megusta, main .columna3 .columna3__general .columna3__artista__cancion__mas, main .contenido .contenido__tres__megusta {
+  width: 18px;
+  height: 18px;
+}
+
+footer .footer__spotify__c2__general__r1__icons, footer .footer__spotify__c3__icons, main .columna3 .columna3__general .columna3__artista__inicio__cerrar {
+  width: 20px;
+  height: 20px;
+}
+
+footer .footer__spotify__c3__general img {
+  width: 20px;
+  height: 20px;
+}
+
+main .banner .banner__retroceder {
+  padding-left: 2px;
+}
+
+main .banner .banner__avanzar {
+  padding-left: 4px;
+}
+
+main .biblioteca__cerrar img {
+  background-color: #343333;
+}
+
+main .banner .banner__avanzar, main .banner .banner__retroceder {
+  background-color: #262626;
+}
+
+main .banner .banner__uno {
+  padding-bottom: 100px;
+}
+
+footer img, main .columna3 img, main .contenido img {
+  width: 100%;
+}
+
+main .contenido .contenido__tres__discografia .contenido__tres__cancion__reproduciendo p {
+  color: rgb(30, 215, 96);
+}
+
+main .contenido .contenido__tres {
+  padding: 10px 20px;
+}
+
+main .columna3 .columna3__general .columna3__artista__cancion__nombre h2 {
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255);
+}
+
+main .columna3 .columna3__general .columna3__artista__descripcion p, main .columna3 .columna3__general .columna3__artista__oyentes p, main .columna3 .columna3__general .columna3__artista__infoartista__banner p, main .columna3 .columna3__general .columna3__artista__cancion__nombre p {
+  font-size: 1rem;
+  color: rgb(255, 255, 255);
+}
+
+main .columna3 .columna3__general .columna3__artista__nombreartista p {
+  font-size: 1rem;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+}
+
+body {
+  background-color: rgb(35, 35, 35);
+  padding: 6px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+main .spotify {
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  width: 80%;
+  margin: 6px auto;
+  gap: 5px;
+}
+main .inicio {
+  background-color: #1c1c1c;
+  padding: 20px;
+  box-sizing: border-box;
+}
+main .biblioteca {
+  background-color: #1c1c1c;
+  padding: 20px;
+  box-sizing: border-box;
+}
+main .inicio nav a, main .biblioteca nav a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+main .inicio__inicio, main .inicio__buscar, main .contenido__tres__discografia {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+@media screen and (max-width: 48rem) {
+  main .inicio__inicio nav a {
+    display: none;
+  }
+}
+@media screen and (max-width: 48rem) {
+  main .inicio__buscar nav a {
+    display: none;
+  }
+}
+main .biblioteca__uno, main .biblioteca__tres {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .contenido__tres__cancion {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (max-width: 48rem) {
+  main .contenido__tres__cancion .contenido__tres__oyentes p, main .contenido__tres__cancion .contenido__tres__duracion p {
+    display: none;
+  }
+}
+main .biblioteca__tres .biblioteca__tres__orden {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+main .biblioteca__dos, main .biblioteca__cuatro__artistas {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+main .biblioteca__cerrar img {
+  border-radius: 50%;
+  background-color: black;
+  opacity: 0.9;
+  padding: 3px;
+  box-sizing: border-box;
+}
+main .biblioteca__artistas button {
+  padding: 6px 18px;
+  border-radius: 19px;
+}
+@media screen and (max-width: 48rem) {
+  main .biblioteca__artistas button {
+    display: none;
+  }
+}
+main .biblioteca__titulo, main .biblioteca__icons, main .biblioteca__cuatro .resaltar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+@media screen and (max-width: 70rem) {
+  main .biblioteca__titulo, main .biblioteca__tres__orden nav a {
+    display: none;
+  }
+}
+main .biblioteca__cuatro .resaltar nav a {
+  color: rgb(30, 215, 96);
+}
+main .biblioteca__cuatro__artistas img {
+  width: 20%;
+  border-radius: 50%;
+}
+@media screen and (max-width: 48rem) {
+  main .biblioteca__cuatro__artistas img {
+    display: none;
+  }
+}
+main .biblioteca__cuatro .activo {
+  color: rgb(30, 215, 96);
+}
+main .biblioteca__cuatro .activo .volumen {
+  width: 20px;
+  filter: opacity(0.3) drop-shadow(0 0 0 #00eb00);
+}
+main .biblioteca__cuatro .activo .volumen img {
+  width: 25px;
+}
+main .banner {
+  width: 100%;
+  background-image: url(../img/coldplay.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgb(255, 255, 255);
+  background-position-y: 40%;
+  padding: 20px;
+  box-sizing: border-box;
+  font-weight: 700;
+  border-radius: 10px 10px 0px 0px;
+}
+main .banner img {
+  width: 100%;
+}
+main .banner .banner__uno {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+main .banner .banner__retroceder {
+  border-radius: 50%;
+  background-color: black;
+  opacity: 0.9;
+  padding: 3px;
+  box-sizing: border-box;
+}
+main .banner .banner__avanzar {
+  border-radius: 50%;
+  background-color: black;
+  opacity: 0.9;
+  padding: 3px;
+  box-sizing: border-box;
+}
+main .banner .banner__uno__flechas {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+main .banner .banner__instalar__app {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+main .banner .banner__instalar__app nav a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+main .banner .banner__instalar__app {
+  background-color: black;
+  padding: 2px 10px;
+  box-sizing: border-box;
+  border-radius: 16px;
+  opacity: 0.9;
+}
+main .banner .banner__uno {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .banner .banner__uno .banner__varios {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+main .banner .banner__uno .banner__notificaciones {
+  border-radius: 50%;
+  background-color: black;
+  opacity: 0.9;
+  padding: 3px;
+  box-sizing: border-box;
+}
+main .banner .banner__uno .banner__user img {
+  border-radius: 50%;
+  background-color: black;
+  opacity: 0.9;
+  padding: 3px;
+  box-sizing: border-box;
+}
+main .banner .banner__uno .banner__user img:hover {
+  transform: scale(1.09);
+}
+main .banner .banner__dos {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+main .banner .banner__dos .banner__verificado {
+  width: 30px;
+  height: 30px;
+  background-color: rgb(61, 145, 244);
+  border-radius: 50%;
+  padding: 4px;
+  box-sizing: border-box;
+}
+main .banner .banner__tres {
+  padding-top: 30px;
+  font-size: 3rem;
+  padding-bottom: 30px;
+}
+main .contenido {
+  padding: 20px;
+  box-sizing: border-box;
+  background: linear-gradient(#121212, #2d3a49);
+}
+main .contenido .contenido__uno {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+main .contenido .contenido__uno__stop {
+  background-color: rgb(30, 215, 96);
+  border-radius: 50%;
+  width: 50px;
+  padding: 6px;
+  box-sizing: border-box;
+}
+main .contenido p {
+  color: rgb(255, 255, 255);
+}
+main .contenido button {
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  padding: 4px 20px;
+  border-radius: 19px;
+  border-color: rgb(255, 255, 255);
+}
+main .contenido h2 {
+  padding-top: 10px;
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+  color: rgb(255, 255, 255);
+}
+main .contenido .contenido__tres__vermas {
+  font-size: 1.1rem;
+  margin-top: 18px;
+}
+main .contenido .contenido__cuatro__seleccion__artista {
+  padding: 36px 0px;
+}
+@media screen and (max-width: 48rem) {
+  main .contenido .contenido__cuatro__seleccion__artista h2 {
+    font-size: 20px;
+  }
+}
+main .contenido .contenido__tres__general {
+  display: contents;
+}
+main .contenido .contenido__tres__discografia {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 250px;
+}
+main .contenido .contenido__tres__discografia .contenido__tres__cancion span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .contenido .contenido__tres__discografia .contenido__tres__cancion p {
+  color: white;
+}
+main .columna3 .columna3__general {
+  background-color: #1c1c1c;
+  padding: 20px;
+  box-sizing: border-box;
+}
+main .columna3 .columna3__general .columna3__artista__inicio {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .columna3 .columna3__general .columna3__artista__inicio__inicio nav a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+@media screen and (max-width: 48rem) {
+  main .columna3 .columna3__general .columna3__artista__portada .columna3__artista__portada__img img {
+    width: 80px;
+  }
+}
+main .columna3 .columna3__general .columna3__artista__cancion {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .columna3 .columna3__general .columna3__artista__cancion__mm {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+@media screen and (max-width: 48rem) {
+  main .columna3 .columna3__general .columna3__artista__cancion__mm {
+    display: none;
+  }
+}
+main .columna3 .columna3__general .columna3__artista__infoartista__banner p {
+  width: 100%;
+  background-image: url(../img/coldplay_info.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgb(255, 255, 255);
+  background-position-y: 0%;
+  padding: 20px;
+  box-sizing: border-box;
+  font-weight: 700;
+  border-radius: 10px 10px 0px 0px;
+  padding-bottom: 100px;
+}
+@media screen and (max-width: 48rem) {
+  main .columna3 .columna3__general .columna3__artista__infoartista {
+    display: none;
+  }
+}
+main .columna3 .columna3__general .columna3__artista__oyentes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .columna3 .columna3__general .columna3__siguiendo button {
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  padding: 4px 20px;
+  border-radius: 19px;
+  border-color: rgb(255, 255, 255);
+}
+@media screen and (max-width: 48rem) {
+  main .columna3 .columna3__general .columna3__siguiendo button {
+    display: none;
+  }
+}
+footer .footer__spotify {
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  width: 80%;
+  margin: 6px auto;
+  gap: 5px;
+}
+footer .footer__spotify__c1__artista {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+footer .footer__spotify__c2__general__r1, footer .footer__spotify__c2__general__r2, footer .footer__spotify__c3__general {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+footer .footer__spotify__c2__general {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+footer .footer__spotify__c3__icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 250px;
+  height: 50px;
+  align-content: stretch;
+  justify-content: space-between;
+}
+footer .footer__spotify__c3 {
+  margin: 0 auto;
+}/*# sourceMappingURL=main.css.map */
